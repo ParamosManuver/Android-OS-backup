@@ -1,0 +1,19 @@
+1.A rooted device
+
+2.Adb installed/android terminal emulator
+
+3.RomDump
+romdump is a (very) simple program that dumps the BOOT, RECOVERY and
+SYSTEM partitions to your SDCARD, this will allow someone who is
+technicaly minded to create a recovery image... and that is a GOOD thing...
+
+DOWNLOAD HERE <http://android.podtwo.com/romdump/romdump.zip>
+
+Once you have downloaded and unziped the file you will have an 'install'
+file, now its time to goto work. There are two ways to proceed...
+
+1.Adb method
+2.Android terminal emulator
+ method
+
+
