@@ -1,0 +1,4 @@
+Once the program has finished in both methods you should find a directory in the root of
+your SD card called romdump and a sub-directory named after your device
+model. Take those files and make a
+recovery zip.
