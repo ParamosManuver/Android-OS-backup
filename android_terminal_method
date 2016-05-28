@@ -1,0 +1,35 @@
+You need to install a terminal application from the Android Market, I
+recomend google's own, but as long as its free.
+
+Once you have installed it, copy the downloaded install file to the root
+of your sdcard, then launch your terminal application and type the
+following commands:
+
+cat /sdcard/install >/data/local/install
+chmod 04755 /data/local/install
+/data/local/install
+
+
+you should see something like following:
+
+Android ROM dumper v0.72b
+(c)2010 Sebastian404
+[*] Android local root exploid (C) The Android Exploid Crew
+[+] Using basedir=/sqlite_stmt_journals, path=/data/local/install
+[+] opening NETLINK_KOBJECT_UEVENT socket
+[+] sending add message ...
+[*] Try to invoke hotplug now, clicking at the wireless
+[*] settings, plugin USB key etc.
+[*] You succeeded if you find /system/bin/romdump.
+
+
+Once you see that you need to turn your Wifi on and off, usualy in
+Settings / Wireless & Networks / Wi-Fi
+
+now thats done, you will need to launch the terminal application one
+more, and type the following:
+
+/system/bin/romdump
+
+
+then wait for it to finish, it can take a while.
