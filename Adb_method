@@ -1,0 +1,36 @@
+ADB stands for Android Debug Bridge, and is something you really should
+have working, I dont intend to enter into a long tutorial on how to
+install and set this up, but someone at google has
+<http://developer.android.com/sdk/win-usb.html>. Make sure you have
+enabled 'USB Debugging' on your device (goto Settings / Applications /
+Development).
+
+Once you have adb type the following commands:
+
+adb push install /data/local/
+adb shell chmod 04755 /data/local/install
+adb shell /data/local/install
+
+
+you should see something like following:
+
+Android ROM dumper v0.72b
+(c)2010 Sebastian404
+[*] Android local root exploid (C) The Android Exploid Crew
+[+] Using basedir=/sqlite_stmt_journals, path=/data/local/install
+[+] opening NETLINK_KOBJECT_UEVENT socket
+[+] sending add message ...
+[*] Try to invoke hotplug now, clicking at the wireless
+[*] settings, plugin USB key etc.
+[*] You succeeded if you find /system/bin/romdump.
+
+
+Once you see that you need to turn your Wifi on and off, usualy in
+Settings / Wireless & Networks / Wi-Fi
+
+now thats done, type the following:
+
+adb shell romdump
+
+
+then wait for it to finish, it can take a while.
